@@ -1,559 +1,419 @@
-
-Voici un résumé pour continuer dans une nouvelle conversation :
-Contexte FluidBody Pilates App
-App React Native/Expo iOS pour Pilates — bundle ID com.ytissot.fluidbody, projet EAS @ytissot/fluidbody.
-État actuel
-* Build #14 soumis sur TestFlight, fonctionne bien sur iPhone
-* Supabase configuré avec clés en dur dans App.js
-* Icône méduse sans texte, fond turquoise/bleu
-* Placeholder méduse animée pour vidéos manquantes
-* 2 testeurs : yvan.tissot@gmail.com + sabrina.tissot@icloud.com
-* App prête à soumettre à Apple dès que les vidéos sont filmées
-À faire
-* Ajouter testeurs TestFlight (clic "+" dans Team Expo)
-* Filmer les vidéos (120 séances, 2 iPhones + CapCut)
-* Uploader sur Bunny.net (library ID 627513)
-* Soumettre à Apple via "Ajouter pour vérification" dans App Store Connect
-* V1.1 : notifications push + keep-awake vidéo
-Stack technique
-* MacBook Pro (bureau) + MacBook Air (maison)
-* Cursor AI pour le code
-* EAS build/submit pour déploiement
-* Supabase (auth) + Bunny.net (vidéos CDN) + RevenueCat (IAP)
-
-Afficher plus
-10:49
-
-Acknowledged project context and readied assistance
-Acknowledged project context and readied assistance
-Parfait Yvan, contexte bien repris ! 👋
-
-Tout est clair — FluidBody est en bonne forme avec le build #14 sur TestFlight. La prochaine grande étape c'est le tournage des vidéos.
-
-Qu'est-ce qu'on attaque aujourd'hui ?
-
-Capture d’écran 2026-04-02 à 10.50.32.png
-10:50
-
-I cannot provide a summary because the user prompt is empty
-I cannot provide a summary because the user prompt is empty
-Je vois le modal pour ajouter des testeurs au groupe Team (Expo).
-
-Tu as déjà 2 testeurs actifs (sabrina + yvan@gmail). Dans la liste, il reste yvan.tissot@icloud.com qui n'est pas encore coché.
-
-Tu veux ajouter ce troisième compte iCloud ? Coche sa case puis clique Ajouter.
-
-Ou tu voulais ajouter quelqu'un d'autre qui n'apparaît pas dans cette liste ? Dans ce cas il faut passer par "Utilisateurs et accès" (le lien bleu dans le modal) pour l'inviter d'abord.
-
-j'ai ajouter No et kim
-
-10:51
-
-Intégré deux nouveaux membres à l'équipe de testeurs
-Intégré deux nouveaux membres à l'équipe de testeurs
-Super ! Donc maintenant le groupe Team (Expo) a 4 testeurs :
-
-yvan.tissot@gmail.com
-sabrina.tissot@icloud.com
-No
-Kim
-Ils vont recevoir une invitation par email pour installer TestFlight et accéder à l'app. Dis-leur de vérifier leurs spams si l'invitation n'arrive pas.
-
-Autre chose à régler ?
-
-je dois attendre qu'il recoive l'email
-
-10:51
-
-Acknowledged l'attente de réception d'email
-Acknowledged l'attente de réception d'email
-Oui exactement, rien à faire de ton côté pour l'instant. Une fois qu'ils acceptent l'invitation, ils apparaîtront comme actifs dans la liste des testeurs.
-
-Si ça tarde, rappelle-leur de vérifier les spams — les emails Apple TestFlight atterrissent souvent là. 📬
-
-on soumet l'app à apple
-
-10:52
-
-Navigated App Store submission process et clarified video readiness status
-Navigated App Store submission process et clarified video readiness status
-Avant de lancer, quelques vérifications rapides :
-
-Les vidéos sont prêtes ? Le contexte indiquait qu'on attendait le tournage pour soumettre. Tu souhaites soumettre avec les placeholders pour l'instant ?
-
-Et côté App Store Connect, il faut s'assurer que tu as bien :
-
-✅ Screenshots (iPhone 6.9" obligatoire)
-✅ Description de l'app
-✅ Mots-clés
-✅ URL de politique de confidentialité
-✅ Informations de contact pour la review
-✅ Build sélectionné (le #14)
-✅ Abonnements configurés dans RevenueCat / App Store Connect
-Tu en es où sur ces points ? On checke ensemble avant de cliquer "Soumettre pour vérification". 🚀
-
-c'est pas grave quand un utilisateur s'inscrit il estdirectement dans l'app sans recevoir un code ou une vérification email
-
-10:54
-
-Évaluant la configuration Supabase et les implications de sécurité
-Évaluant la configuration Supabase et les implications de sécurité
-Pas de problème du tout ! C'est même mieux pour la conversion — moins de friction à l'inscription.
-
-Dans Supabase tu as simplement désactivé la confirmation email, ce qui est un choix valide. Apple n'exige pas de vérification email pour approuver une app.
-
-Le seul point à garder en tête : si un utilisateur met une fausse adresse email, il ne pourra pas recevoir le lien de réinitialisation de mot de passe si un jour il oublie son mot de passe. Mais ça c'est son problème 😄
-
-Donc aucun souci pour la soumission Apple. On continue la checklist ?
-
-oui
-
-10:55
-
-Orchestrated Apple submission checklist continuation
-Orchestrated Apple submission checklist continuation
-Dis-moi où tu en es pour chaque point :
-
-1. Screenshots Tu as des captures d'écran de l'app en format iPhone 6.9" (iPhone 16 Pro Max) ?
-
-2. Description Tu as rédigé une description de l'app en français ? (et autres langues ?)
-
-3. Politique de confidentialité Tu as une URL vers une page de privacy policy ?
-
-4. Build #14 Il est bien sélectionné dans ta fiche App Store Connect ?
-
-5. Abonnements Les produits RevenueCat (20 CHF/mois, 160 CHF/an) sont bien configurés côté App Store Connect ?
-
-Réponds point par point et on règle ce qui manque ! 🚀
-
-je pense qu'il faut  qu'on refasse les prinbtscree
-
-11:22
-
-Décortiqué la demande de refaire les captures d'écran
-Décortiqué la demande de refaire les captures d'écran
-Oui bonne idée, des screenshots propres c'est important — c'est la première chose que voit un utilisateur sur l'App Store.
-
-Ce qu'Apple exige :
-
-iPhone 6.9" obligatoire (iPhone 16 Pro Max) — 1320 x 2868 px
-iPad si tu veux (optionnel pour l'instant)
-Entre 3 et 10 screenshots par format
-Comment les faire ? Deux options :
-
-Depuis TestFlight sur ton iPhone — tu navigues dans l'app et tu fais des captures d'écran normales, puis tu les transfères sur Mac
-Depuis le Simulateur Xcode — tu lances sur un simulateur iPhone 16 Pro Max et tu captures avec Cmd+S
-Ce qu'on devrait montrer :
-
-L'écran d'accueil / méduse animée
-La liste des séances / piliers
-Un écran de lecture vidéo
-L'écran abonnement Premium
-L'écran profil
-Tu veux qu'on les fasse depuis ton iPhone physique ou le simulateur Xcode ?
-
-iphone je t'envoie les print screen
-
-11:25
-
-Anticipated incoming screenshots from user
-Anticipated incoming screenshots from user
-Parfait, envoie-les ! 📲
-
-Je regarderai si la taille est correcte, si le contenu est bien représentatif, et si on doit en recadrer ou en refaire certains.
-
-9898B0C0-C506-4E7A-8E93-06A1663EBCC9_4_5005_c.jpeg
-985FB67A-051C-41B0-AD69-F7514073C563_4_5005_c.jpeg
-5C0E1F1F-9F64-4A40-B862-195B71D2D03A_4_5005_c.jpeg
-DAF0D980-0EB2-4F72-8400-6A5F600D0545_4_5005_c.jpeg
-23930923-5CDA-4185-A81E-A91D0C9C6A26_4_5005_c.jpeg
-95A4CC82-0CBA-4F95-8BBD-3767A74F66C9_4_5005_c.jpeg
-D541AFD5-1F78-4780-811C-FABB31CF3067_4_5005_c.jpeg
-EC2F3BD6-2248-48C1-9E9E-509B3BABDFD3_4_5005_c.jpeg
-9520AE08-4A83-4122-B3F5-BEC75DC39EFC_4_5005_c.jpeg
-64D18943-0BE6-4028-913E-2EA290E99FD1_4_5005_c.jpeg
-1AADF88C-9618-4B1B-AA95-C5BDB995722F_4_5005_c.jpeg
-F0332771-D1A1-414A-A460-83E80EC21118_4_5005_c.jpeg
-EB72ADA7-6CDD-4935-B1B4-13F40D19B7EF_4_5005_c.jpeg
-F79AB715-997A-4DF6-BEB0-6A0F7C9DFB9B_4_5005_c.jpeg
-pourrais-tu me les mettres dans la bonne dimensions
-
-11:26
-
-Calibrated dimensions et renommé images pour iPhone
-Calibrated dimensions et renommé images pour iPhone
-14 screenshots redimensionnés en 1320 x 2868 px (format iPhone 6.9" requis par Apple), nommés dans l'ordre logique.
-
-⚠️ Deux remarques avant de les uploader :
-
-Screenshot #4 (prenom) — le clavier iOS est visible, ce n'est pas idéal. Mieux vaut le refaire sans clavier si possible.
-Screenshot #14 (Premium) — les prix apparaissent comme — car RevenueCat n'est pas encore actif. À refaire une fois les abonnements activés par Apple.
-Les autres sont très bien ! 👌
-
-Screenshots appstore 1320x2868
-ZIP 
-c'est trouble
-
-11:29
-
-Diagnosed image resolution degradation and prescribed higher-quality source files
-Diagnosed image resolution degradation and prescribed higher-quality source files
-Oui, c'est normal — les images originales étaient en 360x782 px (très petites), donc en les agrandissant à 1320x2868 ça pixelise.
-
-La solution : envoie-moi les screenshots en pleine résolution depuis ton iPhone.
-
-Au lieu d'AirDrop ou de partage direct qui compresse les images, fais comme ça :
-
-Photos sur iPhone → sélectionne les screenshots
-Partager → Mail (à toi-même) ou iCloud Drive — ça garde la pleine résolution
-Ou alors dans Photos → Exporter en choisissant "Originaux"
-Un screenshot iPhone 16 Pro Max en pleine résolution doit faire 1320 x 2868 px nativement — donc il n'y aura même pas besoin de les redimensionner ! 📱
-
-9898B0C0-C506-4E7A-8E93-06A1663EBCC9_1_102_o.jpeg
-985FB67A-051C-41B0-AD69-F7514073C563_1_102_o.jpeg
-5C0E1F1F-9F64-4A40-B862-195B71D2D03A_1_102_o.jpeg
-425AC87F-62B1-48E1-A12D-E653B6CB07EB_1_102_o.jpeg
-41381793-F348-4371-8DB5-600FC115F920_1_102_o.jpeg
-F3FE32B0-C317-4D66-BBA1-E29957CA37E3_1_102_o.jpeg
-4CBB9A06-FC25-4296-81CB-09972B3231B7_1_102_o.jpeg
-54FB9DA9-6FA6-4FAB-A814-DAC1C7D5DE53_1_102_o.jpeg
-E85C5AB6-B5B7-4CA7-910E-49B444FE1BD2_1_102_o.jpeg
-11:33
-
-The user prompt is empty, so I cannot determine the primary language. However, based on the thinking block being in English, here is my summary: Reconciled image dimensions while preserving aspect ratio consistency
-The user prompt is empty, so I cannot determine the primary language. However, based on the thinking block being in English, here is my summary: Reconciled image dimensions while preserving aspect ratio consistency
-9 screenshots à 1320 x 2868 px — beaucoup mieux cette fois, les originaux étaient en 920x2000 donc l'agrandissement est minimal. ✅
-
-Ce que tu as :
-
-Accueil méduse
-Onboarding — Commencer
-Onboarding — Tensions
-Home méduse avec les orbes
-Mat Pilates (liste séances)
-Lecteur vidéo
-Progresser
-Bibliothèque
-Parcours
-Il manque encore :
-
-L'écran Inscription (compte)
-L'écran Premium (une fois les prix activés)
-Tu peux uploader ces 9-là dès maintenant sur App Store Connect et compléter avec les 2 manquants plus tard. 🚀
-
-Screenshots appstore v2
-ZIP 
-17E1C197-B6E1-4594-81CB-05DFD1597E8B_1_102_o.jpeg
-Revenue ne fonctionne pas encore
-
-11:36
-
-Orchestrated screenshot compilation and archival packaging
-Orchestrated screenshot compilation and archival packaging
-10 screenshots finaux à 1320x2868 px — prêts pour l'App Store ! ✅
-
-Pour le screenshot Premium, pas de souci — tu l'ajouteras en v1.1 une fois RevenueCat activé. Apple accepte entre 3 et 10 screenshots, donc 10 c'est parfait.
-
-Prochaine étape : uploader ces screenshots dans App Store Connect → ta fiche app → section "Screenshots". On continue la checklist de soumission ? 🚀
-
-Screenshots appstore final
-ZIP 
-c'est les bonnes dimensions Les dimensions d’au moins une capture d’écran sont incorrectes. En savoir plus
-Les captures d’écran doivent respecter ces dimensions : 1242 × 2688px, 2688 × 1242px, 1284 × 2778px ou 2778 × 1284px
-iPhone
-
-11:42
-
-Analysé les dimensions requises et recommandé le redimensionnement optimal
-Analysé les dimensions requises et recommandé le redimensionnement optimal
-Ah, Apple demande les anciennes dimensions ! Il faut choisir parmi ces formats. Le plus courant est 1284 × 2778 px (iPhone 13/14 Pro Max).
-
-
-Exécuté 2 commandes, lu un fichier
-Exécuté 2 commandes, lu un fichier
-10 screenshots en 1284 × 2778 px — c'est le format iPhone 13/14 Pro Max, accepté par Apple.
-
-Essaie d'uploader ceux-là et dis-moi si ça passe ! 🤞
-
-Screenshots 1284x2778
-ZIP 
-Capture d’écran 2026-04-02 à 11.48.41.png
-Ca a l'air bien
-
-11:48
-
-Verified uploaded screenshots successfully
-Verified uploaded screenshots successfully
-Parfait, 10/10 captures d'écran bien chargées ! 🎉 Elles rendent super bien dans la preview.
-
-Je vois aussi que tu as déjà un texte promotionnel et une description en bas.
-
-On continue à scroller pour vérifier le reste de la fiche ? Il faut encore valider :
-
-✅ Screenshots — OK
-⬜ Description complète
-⬜ Mots-clés
-⬜ URL politique de confidentialité
-⬜ Informations de contact pour la review Apple
-⬜ Build sélectionné (#14)
-⬜ Achats intégrés / Abonnements configurés
-URL politique de confidentialité
-
-11:49
-Tu as une page web pour FluidBody ou Espace Pilates ? Il faut une URL publique accessible (ex: fluidbody.app/privacy ou même une page Notion publique).
-
-Si tu n'en as pas, je peux te générer le texte de la politique de confidentialité et tu le mets sur une page simple. Les options les plus rapides :
-
-Page Notion publique — gratuit, 5 minutes
-Page GitHub Pages — gratuit
-Page sur ton site existant si tu en as un
-Tu as déjà un site pour FluidBody ?
-
-page github
-
-11:49
-
-Devised GitHub Pages privacy policy solution
-Devised GitHub Pages privacy policy solution
-Bonne idée, c'est rapide et gratuit. Voici comment faire :
-
-1. Crée un repo GitHub
-
-Va sur github.com → "New repository"
-Nom : fluidbody-privacy
-Coche "Add a README file"
-Visibilité : Public
-2. Crée le fichier index.html
-
-Je te génère le contenu maintenant 👇
-
-
-Fichier créé, lu un fichier
-Fichier créé, lu un fichier
-Voilà le fichier index.html à uploader sur GitHub. Ensuite :
-
-3. Active GitHub Pages
-
-Dans le repo → Settings → Pages
-Source : Deploy from a branch → main → / (root)
-Clique Save
-Après quelques minutes ton URL sera : https://ytissot.github.io/fluidbody-privacy/
-
-C'est cette URL que tu colles dans App Store Connect dans le champ "URL de politique de confidentialité". 🎯
-
-Index
-Code · HTML 
-Capture d’écran 2026-04-02 à 11.50.46.png
-11:50
-
-I notice the user prompt is empty, so I cannot determine the primary language. However, based on the thinking block content, here is my summary: Weighed repository organization strategies for hosting privacy policy
-I notice the user prompt is empty, so I cannot determine the primary language. However, based on the thinking block content, here is my summary: Weighed repository organization strategies for hosting privacy policy
-Je vois que ton repo s'appelle yvan-glitch/fluidbody. Tu as deux options :
-
-Option A — Le plus simple : Ajoute l'index.html directement dans ce repo existant dans un dossier docs/, l'URL sera : https://yvan-glitch.github.io/fluidbody/
-
-Option B — Plus propre : Crée un nouveau repo fluidbody-privacy séparé.
-
-Je te recommande Option A pour aller vite. Voici comment :
-
-Dans ton repo → Add file → Create new file
-Nomme-le docs/index.html
-Colle le contenu du fichier HTML que je t'ai généré
-Clique Commit changes
-Va dans Settings → Pages → Source : main → dossier /docs
-Clique Save
-Ton URL sera : https://yvan-glitch.github.io/fluidbody/
-
-Tu veux qu'on essaie ?
-
-Capture d’écran 2026-04-02 à 11.53.51.png
-11:53
-
-Identified missing GitHub Pages activation and charted guidance path
-Identified missing GitHub Pages activation and charted guidance path
-Normal ! GitHub Pages n'est pas encore activé. Il faut le faire manuellement :
-
-Va dans ton repo → Settings (en haut à droite)
-Dans le menu gauche → Pages
-Sous "Branch" → sélectionne main → dossier /docs
-Clique Save
-Attends 2-3 minutes puis recharge la page. Tu verras apparaître un message vert avec ton URL. 🟢
-
-Capture d’écran 2026-04-02 à 11.55.20.png
-11:55
-"GitHub Pages source saved" — c'est bon, c'est configuré sur main / /docs. ✅
-
-Attends 2-3 minutes puis teste cette URL :
-
-https://yvan-glitch.github.io/fluidbody/
-
-Si ça affiche la politique de confidentialité, tu colles cette URL dans App Store Connect. 🎯
-
-ca fonctionne pas
-
-12:00
-
-Diagnosed missing file structure issue
-Diagnosed missing file structure issue
-Normal — le fichier docs/index.html n'existe pas encore dans le repo ! Tu as configuré GitHub Pages mais il n'y a rien à afficher.
-
-Il faut créer le fichier :
-
-Va sur github.com/yvan-glitch/fluidbody
-Clique Add file → Create new file
-Dans le champ nom, tape exactement : docs/index.html
-Dans l'éditeur, colle tout le contenu du fichier HTML que je t'ai généré (le fichier index.html téléchargé)
-Clique Commit changes → Commit directly to main
-Une fois committé, attends 1-2 min et recharge https://yvan-glitch.github.io/fluidbody/ 🚀
-
-Capture d’écran 2026-04-02 à 12.01.09.png
-12:01
-
-Navigated user toward code repository navigation task
-Navigated user toward code repository navigation task
-Tu es encore dans Settings. Il faut aller créer le fichier. Clique sur Code en haut à gauche pour retourner au repo, puis suis ces étapes :
-
-Clique Add file → Create new file
-Tape docs/index.html dans le champ du nom
-Colle le contenu HTML (le fichier que tu as téléchargé tout à l'heure)
-Commit changes
-Capture d’écran 2026-04-02 à 12.01.59.png
-12:02
-Je vois le dossier docs créé il y a 8 minutes — mais il est probablement vide. Clique sur "docs" pour vérifier, puis sur le fichier index.html pour voir s'il a du contenu.
-
-Si le fichier est vide, clique dessus → édite (icône crayon) → colle le HTML → commit. 🖊️
-
-Capture d’écran 2026-04-02 à 12.02.28.png
-12:02
-Le fichier index.html existe ! Clique dessus pour l'ouvrir, puis clique sur l'icône crayon ✏️ en haut à droite pour l'éditer. Colle tout le contenu HTML, puis Commit changes.
-
-Capture d’écran 2026-04-02 à 12.03.01.png
-12:03
-Le fichier contient du texte brut, pas le HTML ! Il faut tout remplacer par le vrai code HTML.
-
-Sélectionne tout avec Cmd+A
-Supprime tout
-Colle le contenu du fichier index.html que tu as téléchargé
-Clique Commit changes
-Le fichier HTML téléchargé est dans ton dossier Téléchargements — ouvre-le avec un éditeur texte (TextEdit ou VS Code), copie tout, et colle dans GitHub.
-
-si je clique je n'ai pas du html comment convertir
-
-12:04
-
-Orchestrated direct HTML solution for conversion issue
-Orchestrated direct HTML solution for conversion issue
-Pas besoin de convertir ! Copie directement le code HTML ci-dessous, sélectionne tout dans l'éditeur GitHub (Cmd+A) et colle :
-
-html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Politique de confidentialité — FluidBody Pilates</title>
-  <style>
-    body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px; color: #1a1a2e; line-height: 1.7; background: #f9f9fb; }
-    h1 { font-size: 2rem; color: #0a6e7c; }
-    h2 { font-size: 1.2rem; margin-top: 2rem; color: #0a6e7c; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a1423">
+<title>Politique de confidentialité — FluidBody+</title>
+<style>
+  :root {
+    --bg: #0a1423;
+    --bg-soft: #131e2e;
+    --bg-card: rgba(255,255,255,0.04);
+    --text: #ffffff;
+    --text-muted: rgba(255,255,255,0.62);
+    --text-subtle: rgba(255,255,255,0.38);
+    --border: rgba(255,255,255,0.10);
+    --accent: #AEEF4D;
+    --accent-yellow: #E5FF00;
+    --max: 760px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  header {
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(174,239,77,0.12) 0%, transparent 60%),
+      linear-gradient(180deg, #0a1423 0%, #0e1a2c 50%, #0a1423 100%);
+    color: #fff;
+    padding: 88px 24px 56px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(174,239,77,0.4), transparent);
+  }
+  .wordmark {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 0 0 10px;
+    color: #ffffff;
+  }
+  .wordmark .plus {
+    color: var(--accent);
+    font-weight: 900;
+    margin-left: 8px;
+    text-shadow: 0 0 24px rgba(174,239,77,0.5);
+  }
+  .tagline {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 500;
+  }
+  .lang-switch {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    background: rgba(10,20,35,0.7);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 24px;
+    padding: 4px;
+    display: flex;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    z-index: 100;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  }
+  .lang-switch button {
+    background: transparent;
+    border: 0;
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 7px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 0.6px;
+    font-family: inherit;
+  }
+  .lang-switch button.active {
+    background: var(--accent);
+    color: #000;
+    box-shadow: 0 0 12px rgba(174,239,77,0.4);
+  }
+  main {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+    margin: 0 0 10px;
+    color: #fff;
+  }
+  .updated {
+    font-size: 13px;
+    color: var(--text-subtle);
+    margin: 0 0 36px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    margin: 40px 0 14px;
+    color: #fff;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  h2::before {
+    content: '';
+    width: 4px;
+    height: 18px;
+    background: var(--accent);
+    border-radius: 2px;
+    flex-shrink: 0;
+    align-self: center;
+  }
+  p {
+    margin: 0 0 14px;
+    color: rgba(255,255,255,0.85);
+  }
+  ul {
+    margin: 0 0 18px;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 10px;
+    color: rgba(255,255,255,0.85);
+  }
+  li::marker {
+    color: var(--accent);
+  }
+  strong {
+    font-weight: 700;
+    color: #fff;
+  }
+  code {
+    background: rgba(174,239,77,0.10);
+    color: var(--accent);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.88em;
+    font-family: 'SF Mono', Menlo, Consolas, monospace;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(174,239,77,0.35);
+    transition: border-color 0.15s, color 0.15s;
+  }
+  a:hover {
+    border-color: var(--accent);
+    color: #c4f570;
+  }
+  .contact {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 22px 26px;
+    margin-top: 28px;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .contact strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--accent);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .contact a {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 12px;
+    color: var(--text-subtle);
+    border-top: 1px solid var(--border);
+    background: rgba(0,0,0,0.2);
+  }
+  [hidden] { display: none !important; }
+  @media (max-width: 540px) {
+    header { padding: 80px 20px 44px; }
+    .wordmark { font-size: 26px; }
+    main { padding: 36px 20px 72px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    body { font-size: 15px; }
+    .contact { padding: 18px 20px; }
+    .contact a { font-size: 15px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
 </head>
 <body>
+
+<div class="lang-switch" role="group" aria-label="Language">
+  <button id="btn-fr" class="active" type="button">FR</button>
+  <button id="btn-en" type="button">EN</button>
+</div>
+
+<header>
+  <h1 class="wordmark">FLUIDBODY<span class="plus">+</span></h1>
+  <p class="tagline">Pilates &amp; More</p>
+</header>
+
+<main>
+
+<!-- ============ FR ============ -->
+<section id="content-fr">
   <h1>Politique de confidentialité</h1>
-  <p><strong>Application :</strong> FluidBody Pilates<br>
-  <strong>Éditeur :</strong> Espace Pilates Sàrl<br>
-  <strong>Contact :</strong> yvan@espace-pilates.ch<br>
-  <strong>Dernière mise à jour :</strong> avril 2025</p>
+  <p class="updated">Dernière mise à jour : 10 mai 2026</p>
+
+  <p>FluidBody+ (« nous », « l'application ») accorde une importance fondamentale à la protection de vos données personnelles. Cette politique décrit quelles informations sont collectées, comment elles sont utilisées et quels sont vos droits.</p>
 
   <h2>1. Données collectées</h2>
+  <p>Lors de la création de votre compte et de l'utilisation de l'application, nous collectons les informations suivantes, <strong>uniquement avec votre consentement</strong> :</p>
   <ul>
-    <li>Adresse e-mail et mot de passe</li>
-    <li>Prénom</li>
-    <li>Progression dans les séances et piliers</li>
-    <li>Langue sélectionnée</li>
-    <li>Informations d'abonnement (via RevenueCat)</li>
+    <li><strong>Adresse email</strong> — pour l'authentification de votre compte</li>
+    <li><strong>Prénom</strong> — pour personnaliser l'expérience (ex. message d'accueil)</li>
+    <li><strong>Genre</strong> (femme / homme / autre) — pour adapter les recommandations</li>
+    <li><strong>Date de naissance</strong> — pour adapter le contenu à votre tranche d'âge</li>
+    <li><strong>Taille (cm)</strong> et <strong>poids (kg)</strong> — pour personnaliser les séances</li>
+    <li><strong>Zones de tension corporelle</strong> (dos, épaules, hanches, posture, respiration, stress, bureau) — pour recommander des programmes ciblés</li>
+    <li><strong>Progression de vos séances</strong> (séances complétées, streak quotidien, statistiques)</li>
   </ul>
+  <p>Aucune donnée biométrique sensible (rythme cardiaque, mesures corporelles autres que celles ci-dessus) n'est collectée par l'application elle-même.</p>
 
   <h2>2. Utilisation des données</h2>
+  <p>Vos données sont utilisées exclusivement pour :</p>
   <ul>
-    <li>Créer et gérer votre compte</li>
-    <li>Synchroniser votre progression</li>
-    <li>Gérer votre abonnement Premium</li>
-    <li>Personnaliser votre expérience</li>
+    <li>Authentifier votre compte</li>
+    <li>Personnaliser votre programme de séances</li>
+    <li>Sauvegarder votre progression entre vos appareils</li>
+    <li>Vous envoyer des notifications de rappel (uniquement si activées dans les réglages)</li>
+  </ul>
+  <p><strong>Nous ne vendons, ne louons et ne partageons jamais vos données avec des tiers à des fins publicitaires ou marketing.</strong></p>
+
+  <h2>3. Hébergement et sécurité</h2>
+  <p>Vos données sont hébergées par <strong>Supabase</strong>, plateforme cloud conforme au RGPD, sur des serveurs situés dans l'Union européenne. La connexion entre l'application et Supabase est chiffrée via TLS/HTTPS.</p>
+  <p>Votre mot de passe est stocké de manière hashée (jamais en clair) ou, si vous utilisez <strong>Sign in with Apple</strong>, géré directement par Apple — nous ne voyons jamais votre mot de passe.</p>
+  <p>Une partie des données (progression, préférences) est également mise en cache localement sur votre appareil via AsyncStorage pour permettre l'utilisation hors-ligne.</p>
+
+  <h2>4. Intégrations tierces</h2>
+  <ul>
+    <li><strong>Apple HealthKit</strong> (iOS uniquement) : si vous l'autorisez, FluidBody+ enregistre vos séances comme exercices dans l'app Santé. Aucune donnée HealthKit ne quitte votre appareil — l'écriture est unidirectionnelle vers Santé.</li>
+    <li><strong>RevenueCat</strong> : gère les abonnements in-app (FluidBody+ Premium). Reçoit votre identifiant utilisateur Supabase pour valider l'abonnement.</li>
+    <li><strong>Bunny CDN</strong> : héberge les vidéos de séances. Aucune donnée personnelle ne lui est transmise — seules les requêtes de lecture vidéo.</li>
+    <li><strong>Apple / Sign in with Apple</strong> : si utilisé, Apple peut vous fournir un email relais (<code>@privaterelay.appleid.com</code>) afin de masquer votre véritable adresse.</li>
   </ul>
 
-  <h2>3. Stockage et sécurité</h2>
-  <p>Les données sont stockées via <strong>Supabase</strong>. Les mots de passe sont chiffrés et jamais accessibles en clair.</p>
-
-  <h2>4. Partage des données</h2>
-  <p>Nous ne vendons pas vos données. Sous-traitants :</p>
+  <h2>5. Vos droits</h2>
+  <p>Conformément au RGPD et à la LPD suisse, vous disposez des droits suivants :</p>
   <ul>
-    <li>Supabase — authentification et base de données</li>
-    <li>RevenueCat — gestion des abonnements</li>
-    <li>Bunny.net — diffusion des vidéos</li>
+    <li><strong>Droit d'accès</strong> — consultation de vos données via la section « Mon profil » de l'application</li>
+    <li><strong>Droit de rectification</strong> — modification de vos données depuis le profil</li>
+    <li><strong>Droit à l'effacement</strong> — suppression définitive de votre compte et de toutes les données associées (progression, profil, métadonnées). Pour exercer ce droit, envoyez un email à <a href="mailto:yvan.tissot@icloud.com?subject=Suppression%20de%20compte%20FluidBody%2B">yvan.tissot@icloud.com</a> avec l'objet « Suppression de compte ». Le traitement intervient sous 30 jours maximum.</li>
+    <li><strong>Droit à la portabilité</strong> — export de vos données au format JSON sur demande</li>
   </ul>
 
-  <h2>5. Suppression des données</h2>
-  <p>Demande à <a href="mailto:yvan@espace-pilates.ch">yvan@espace-pilates.ch</a>. Traitement sous 30 jours.</p>
+  <h2>6. Notifications</h2>
+  <p>Les rappels de séance, phrases du jour et pauses actives sont gérés localement par l'OS de votre téléphone (iOS Notifications). Aucun serveur tiers n'est impliqué dans l'envoi de ces notifications. Vous pouvez les désactiver à tout moment dans les réglages de l'application ou de votre système.</p>
 
-  <h2>6. Mineurs</h2>
-  <p>L'app n'est pas destinée aux moins de 13 ans.</p>
+  <h2>7. Mineurs</h2>
+  <p>FluidBody+ n'est pas destiné aux personnes de moins de 16 ans. Si nous apprenons qu'un compte a été créé par un mineur sans consentement parental, il sera supprimé.</p>
 
-  <h2>7. Contact</h2>
-  <p>📧 <a href="mailto:yvan@espace-pilates.ch">yvan@espace-pilates.ch</a><br>Espace Pilates Sàrl, Suisse</p>
+  <h2>8. Modifications de cette politique</h2>
+  <p>Toute modification substantielle vous sera notifiée dans l'application avant d'entrer en vigueur. La date de dernière mise à jour figure en tête de ce document.</p>
 
-  <footer style="margin-top:3rem;font-size:0.85rem;color:#888">© 2025 Espace Pilates Sàrl</footer>
+  <h2>9. Contact</h2>
+  <div class="contact">
+    <strong>Pour toute question relative à vos données</strong>
+    <a href="mailto:yvan.tissot@icloud.com">yvan.tissot@icloud.com</a><br>
+    <span style="color: rgba(255,255,255,0.6); font-size: 14px; display: block; margin-top: 8px;">FluidBody+ — Espace Pilates, La Tour-de-Peilz, Suisse</span>
+  </div>
+</section>
+
+<!-- ============ EN ============ -->
+<section id="content-en" hidden>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: May 10, 2026</p>
+
+  <p>FluidBody+ ("we", "the app") is fundamentally committed to protecting your personal data. This policy describes what information is collected, how it is used, and what your rights are.</p>
+
+  <h2>1. Data we collect</h2>
+  <p>When you create an account and use the app, we collect the following information <strong>only with your consent</strong>:</p>
+  <ul>
+    <li><strong>Email address</strong> — for account authentication</li>
+    <li><strong>First name</strong> — to personalize the experience (e.g. welcome message)</li>
+    <li><strong>Gender</strong> (female / male / other) — to adapt recommendations</li>
+    <li><strong>Date of birth</strong> — to adapt content to your age range</li>
+    <li><strong>Height (cm)</strong> and <strong>weight (kg)</strong> — to personalize sessions</li>
+    <li><strong>Body tension zones</strong> (back, shoulders, hips, posture, breathing, stress, office) — to recommend targeted programs</li>
+    <li><strong>Session progress</strong> (completed sessions, daily streak, statistics)</li>
+  </ul>
+  <p>No sensitive biometric data (heart rate, body measurements other than the above) is collected by the app itself.</p>
+
+  <h2>2. How we use your data</h2>
+  <p>Your data is used exclusively to:</p>
+  <ul>
+    <li>Authenticate your account</li>
+    <li>Personalize your session program</li>
+    <li>Sync your progress across your devices</li>
+    <li>Send reminder notifications (only if enabled in settings)</li>
+  </ul>
+  <p><strong>We never sell, rent, or share your data with third parties for advertising or marketing purposes.</strong></p>
+
+  <h2>3. Hosting and security</h2>
+  <p>Your data is hosted by <strong>Supabase</strong>, a GDPR-compliant cloud platform, on servers located in the European Union. The connection between the app and Supabase is encrypted via TLS/HTTPS.</p>
+  <p>Your password is stored in hashed form (never in plain text) or, if you use <strong>Sign in with Apple</strong>, managed directly by Apple — we never see your password.</p>
+  <p>Part of the data (progress, preferences) is also cached locally on your device via AsyncStorage to enable offline use.</p>
+
+  <h2>4. Third-party integrations</h2>
+  <ul>
+    <li><strong>Apple HealthKit</strong> (iOS only): if authorized, FluidBody+ records your sessions as workouts in the Health app. No HealthKit data leaves your device — writing is one-way to Health.</li>
+    <li><strong>RevenueCat</strong>: manages in-app subscriptions (FluidBody+ Premium). Receives your Supabase user identifier to validate subscription status.</li>
+    <li><strong>Bunny CDN</strong>: hosts session videos. No personal data is transmitted — only video read requests.</li>
+    <li><strong>Apple / Sign in with Apple</strong>: if used, Apple may provide a relay email (<code>@privaterelay.appleid.com</code>) to hide your real address.</li>
+  </ul>
+
+  <h2>5. Your rights</h2>
+  <p>Under the GDPR and Swiss FADP, you have the following rights:</p>
+  <ul>
+    <li><strong>Right of access</strong> — review your data via the "My Profile" section of the app</li>
+    <li><strong>Right to rectification</strong> — edit your data from your profile</li>
+    <li><strong>Right to erasure</strong> — permanently delete your account and all associated data (progress, profile, metadata). To exercise this right, send an email to <a href="mailto:yvan.tissot@icloud.com?subject=FluidBody%2B%20Account%20Deletion">yvan.tissot@icloud.com</a> with the subject "Account deletion". Processing occurs within 30 days maximum.</li>
+    <li><strong>Right to portability</strong> — export your data in JSON format upon request</li>
+  </ul>
+
+  <h2>6. Notifications</h2>
+  <p>Session reminders, daily quotes, and active breaks are handled locally by your phone's OS (iOS Notifications). No third-party server is involved in sending these notifications. You can disable them at any time in the app settings or your system settings.</p>
+
+  <h2>7. Minors</h2>
+  <p>FluidBody+ is not intended for users under 16. If we learn that an account has been created by a minor without parental consent, it will be deleted.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>Any substantial change will be notified to you within the app before taking effect. The last update date appears at the top of this document.</p>
+
+  <h2>9. Contact</h2>
+  <div class="contact">
+    <strong>For any question regarding your data</strong>
+    <a href="mailto:yvan.tissot@icloud.com">yvan.tissot@icloud.com</a><br>
+    <span style="color: rgba(255,255,255,0.6); font-size: 14px; display: block; margin-top: 8px;">FluidBody+ — Espace Pilates, La Tour-de-Peilz, Switzerland</span>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 FluidBody+ · Espace Pilates
+</footer>
+
+<script>
+  (function() {
+    var btnFr = document.getElementById('btn-fr');
+    var btnEn = document.getElementById('btn-en');
+    var contentFr = document.getElementById('content-fr');
+    var contentEn = document.getElementById('content-en');
+    var html = document.documentElement;
+
+    function setLang(lang) {
+      var isFr = lang === 'fr';
+      contentFr.hidden = !isFr;
+      contentEn.hidden = isFr;
+      btnFr.classList.toggle('active', isFr);
+      btnEn.classList.toggle('active', !isFr);
+      html.lang = lang;
+      try { localStorage.setItem('fluidbody_privacy_lang', lang); } catch (e) {}
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    btnFr.addEventListener('click', function() { setLang('fr'); });
+    btnEn.addEventListener('click', function() { setLang('en'); });
+
+    var initial = 'fr';
+    try {
+      var saved = localStorage.getItem('fluidbody_privacy_lang');
+      if (saved === 'fr' || saved === 'en') {
+        initial = saved;
+      } else if (navigator.language && navigator.language.toLowerCase().indexOf('fr') !== 0) {
+        initial = 'en';
+      }
+    } catch (e) {}
+    setLang(initial);
+  })();
+</script>
+
 </body>
 </html>
-Colle ça dans GitHub → Commit changes ✅
-
-Capture d’écran 2026-04-02 à 12.05.30.png
-12:05
-Le HTML est bien en place ! ✅ Maintenant attends 1-2 minutes et teste l'URL :
-
-https://yvan-glitch.github.io/fluidbody/
-
-fonctionne tours pas
-
-12:06
-
-Investigated déploiement GitHub et diagnostiqué problèmes potentiels
-Investigated déploiement GitHub et diagnostiqué problèmes potentiels
-Vérifie si le déploiement est en cours. Va dans Actions (dans le menu du repo) — tu verras si GitHub est en train de builder la page. Il y aura une icône 🟡 en cours ou ✅ terminé.
-
-Si c'est ✅ et que ça ne fonctionne toujours pas, essaie l'URL exacte avec le slash final :
-
-https://yvan-glitch.github.io/fluidbody/
-
-Et vérifie que tu n'as pas de cache — fais Cmd+Shift+R pour forcer le rechargement.
-
-Capture d’écran 2026-04-02 à 12.07.41.png
-12:07
-Les deux déploiements ont échoué ❌. Clique sur le premier pour voir l'erreur exacte.
-
-Capture d’écran 2026-04-02 à 12.08.07.png
-12:08
-L'erreur est claire :
-
-"No url found for submodule path 'fluidbody' in .gitmodules"
-
-Le dossier fluidbody dans ton repo est un submodule Git cassé — c'est lui qui bloque le déploiement.
-
-Pour régler ça rapidement, le plus simple est de créer un nouveau repo séparé juste pour la privacy policy :
-
-Va sur github.com/new
-Nom : fluidbody-privacy
-Public + coche "Add a README"
-Crée le repo
-Add file → Create new file → nomme-le index.html
-Colle le code HTML
-Commit
-Va dans Settings → Pages → branch main → dossier / (root) → Save
-L'URL sera : https://yvan-glitch.github.io/fluidbody-privacy/ 🎯
-
-
-
-
-
-
-Claude est une IA et peut faire des erreurs. Veuillez vérifier les réponses.
